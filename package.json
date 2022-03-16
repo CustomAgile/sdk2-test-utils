@@ -1,0 +1,29 @@
+{
+  "author": "Kyle Morse <kyle.morse@ca.com>",
+  "name": "rally-sdk2-test-utils",
+  "description": "Utilities, mock data and helpers for writing unit tests for SDK 2.1 apps",
+  "version": "0.1.3",
+  "homepage": "https://github.com/rallyapps/sdk2-test-utils",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rallyapps/sdk2-test-utils.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">0.10.32"
+  },
+  "dependencies": {
+    "jasmine-sinon": "0.4.0",
+    "sinon": "1.17.6"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-cli": "1.2.0",
+    "grunt-contrib-uglify": "2.0.0"
+  },
+  "scripts": {
+    "build": "grunt build",
+    "clean": "rm -rf ./dist",
+    "test": "cd ./example/crud && npm run test && cd ../grid && npm run test && cd ../start && npm run test && cd ../.."
+  }
+}
